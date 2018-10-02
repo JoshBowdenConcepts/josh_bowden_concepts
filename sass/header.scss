@@ -1,7 +1,15 @@
 @import 'mixins';
 
 header {
-    height: 100vh;
-    // background-color: #3fc291;
+    height: auto;
+    min-height: 500px;
+    background-color: $header-background;
+    background-image: $header-background-gradient;
+    padding-top: 70px;
+
+    #particles-js {
+        height: 500px;
+        width: 100vw;
+    }
 
 }
