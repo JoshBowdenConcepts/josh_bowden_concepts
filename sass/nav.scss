@@ -35,6 +35,10 @@ nav {
                 text-transform: uppercase;
                 cursor: pointer;
             }
+
+            li:hover {
+                color: $accent-color;
+            }
         }
     }
 }

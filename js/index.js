@@ -17,7 +17,6 @@ console.log('started');
         i++;
         setTimeout(typeWriter, speed);
       } else {
-        $('#menu-btn').show();
         $('#my-work-btn').fadeIn();
       }
     }

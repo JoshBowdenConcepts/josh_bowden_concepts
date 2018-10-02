@@ -1,0 +1,116 @@
+@import 'mixins';
+
+$hexagon-one-color: white;
+$hexagon-two-color: rgb(182, 182, 182);
+
+#intro {
+    background-color: white;
+
+    h3 {
+        text-align: center;
+        color: $offblack;
+        margin-bottom: 40px;
+    }
+
+    #skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .skill {
+            padding: 60px 30px 40px 30px;
+            border: 1px solid $hexagon-two-color;
+            width: 250px;
+            text-align: center;
+            position: relative;
+            margin: 30px 10px;
+
+
+            .hexagon {
+                position: absolute;
+                width: 70px; 
+                height: 40.41px;
+                background-color: $hexagon-one-color;
+                margin: 20.21px 0;
+                top: -40px;
+                left: 50%;
+                -webkit-transform: translate(-50%, -0%);
+                transform: translate(-50%, -0%);
+            }
+              
+            .hexagon:before,
+            .hexagon:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                border-left: 35px solid transparent;
+                border-right: 35px solid transparent;
+                left: 50%;
+                -webkit-transform: translate(-50%, -0%);
+                transform: translate(-50%, -0%);
+            }
+            
+            .hexagon:before {
+                bottom: 100%;
+                border-bottom: 20.21px solid $hexagon-one-color;
+            }
+            
+            .hexagon:after {
+                top: 100%;
+                width: 0;
+                border-top: 20.21px solid $hexagon-one-color;
+            }
+
+            .hexagon2 {
+                position: absolute;
+                top: -41px;
+                left: 50%;
+                width: 72px; 
+                -webkit-transform: translate(-50%, -0%);
+                transform: translate(-50%, -0%);
+                height: 41.57px;
+                background-color: $hexagon-two-color;
+                margin: 20.78px 0;
+            }
+              
+            .hexagon2:before,
+            .hexagon2:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                border-left: 36px solid transparent;
+                border-right: 36px solid transparent;
+                left: 50%;
+                -webkit-transform: translate(-50%, -0%);
+                transform: translate(-50%, -0%);
+            }
+            
+            .hexagon2:before {
+                bottom: 100%;
+                border-bottom: 20.78px solid $hexagon-two-color;
+            }
+            
+            .hexagon2:after {
+                top: 100%;
+                width: 0;
+                border-top: 20.78px solid $hexagon-two-color;
+            }
+
+            h4 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 1.3;
+                color: $offblack;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    #skills {
+        flex-wrap: nowrap !important;
+    }
+}
