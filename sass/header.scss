@@ -2,14 +2,40 @@
 
 header {
     height: auto;
-    min-height: 500px;
     background-color: $header-background;
     background-image: $header-background-gradient;
-    padding-top: 70px;
+    // padding-top: 70px;
+    position: relative;
+    box-sizing: border-box;
 
     #particles-js {
-        height: 500px;
+        height: 100%;
         width: 100vw;
+        position: absolute;
+        box-sizing: border-box;
+    }
+
+    #hero {
+        padding: 200px 0px;
+        width: 500px;
+        max-width: 90%;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-weight: 200;
+        font-size: 1.2rem;
+        margin: 10px 0px;
+    }
+
+    #my-work-btn {
+        display: none;
     }
 
 }

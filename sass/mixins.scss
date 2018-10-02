@@ -1,6 +1,8 @@
 $background: #EDEEF2;
 $main-box-shadow: 0px 0px 6px 0px darken($background, 15%);
 
+$accent-color: #3DC67C;
+
 $header-background: #354B62;
 $header-background-gradient: radial-gradient(#465E81, #354B62); // background-image
 
@@ -9,3 +11,6 @@ $nav-background: white;
 // Text Colors
 $offblack: rgba(0,0,0,0.9);
 $offwhite: rgba(225,225,225,0.9);
+
+// Constructors:
+$border-radius: 4px;
