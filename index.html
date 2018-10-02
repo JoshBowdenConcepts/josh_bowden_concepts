@@ -8,8 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat:700|Roboto" rel="stylesheet">
+    <!-- Swiper Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
     <!-- styles -->
     <link href="./styles/all.min.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Background Image: https://unsplash.com/photos/nI7knd5sQfo -->
@@ -100,6 +107,16 @@
       <div id="work">
         <div class="container">
             <h3 class="heading_font">My Work</h3>
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(https://picsum.photos/600/600/?random)"></div>
+              <div class="swiper-slide" style="background-image:url(https://picsum.photos/600/600/?random)"></div>
+              <div class="swiper-slide" style="background-image:url(https://picsum.photos/600/600/?random)"></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
         </div>
       </div>
       <!-- End of Work Section -->
@@ -108,11 +125,32 @@
     <footer>
 
     </footer>
-    <!-- jQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        // Set loop to true with enough projects
+        // Set up double click to navigate to
+        // ondblclick="window.location='http://www.google.com'"
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            slideToClickedSlide: true,
+            initialSlide: 1,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+        mySwiper.slideNext();
+    </script>
     <!-- scripts -->
     <script type="text/javascript" src="./scripts/all.min.js"></script>
   </body>
