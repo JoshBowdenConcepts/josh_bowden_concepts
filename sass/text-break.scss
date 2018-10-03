@@ -1,0 +1,14 @@
+@import 'mixins';
+
+#text_break {
+    background-color: white;
+
+    p {
+        width: 800px;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+}
