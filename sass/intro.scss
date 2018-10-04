@@ -36,6 +36,13 @@ $hexagon-two-color: rgb(182, 182, 182);
                 left: 50%;
                 -webkit-transform: translate(-50%, -0%);
                 transform: translate(-50%, -0%);
+
+                i {
+                    line-height: 40.41px;
+                    text-align: center;
+                    font-size: 2rem;
+                    color: $accent-color;
+                }
             }
               
             .hexagon:before,
