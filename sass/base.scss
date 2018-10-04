@@ -66,3 +66,12 @@ footer {
     color: $offwhite;
     background-color: $header-background;
 }
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(61, 198, 154, 0), rgba(61, 198, 154, 0.75), rgba(61, 198, 154, 0));
+    margin: 20px auto 40px auto;
+    width: 200px;
+
+}

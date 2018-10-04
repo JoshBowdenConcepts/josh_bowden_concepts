@@ -1,9 +1,15 @@
 @import 'mixins';
 
+#work {
+    h3 {
+        margin-bottom: 20px;
+    }
+}
+
 .swiper-container {
     width: 90%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 .swiper-slide {
@@ -22,6 +28,7 @@
         padding: 50px;
         text-align: center;
         box-sizing: border-box;
+        color: white;
 
         .slide_header {
             font-size: 1.2rem;

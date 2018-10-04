@@ -84,10 +84,13 @@
                     height: 100px;
                     border-radius: 4px;
                     background-color: rgba(225,225,225,0);
+                    font-family: 'Hind', sans-serif;
+                    line-height: 38px;
                     box-sizing: border-box;
                     border: 1px solid $background;
                     cursor: pointer;
                     color: white;
+                    padding: 10px;
                 }
 
                 input::placeholder, textarea::placeholder {
