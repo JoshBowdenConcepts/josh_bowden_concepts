@@ -13,6 +13,7 @@
         border-radius: 4px;
         box-shadow: $header-box-shadow;
         flex-wrap: wrap;
+        box-sizing: border-box;
 
         #form, #information {
             flex-grow: 1;
@@ -23,6 +24,7 @@
         #information {
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
+            box-sizing: border-box;
 
             h3 {
                 text-align: left !important;

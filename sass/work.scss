@@ -24,7 +24,8 @@
         background-color: transparentize($accent-color, 0.1);
         height: 100%;
         width: 100%;
-        display: none;
+        opacity: 0;
+        transition: 0.2s;
         padding: 50px;
         text-align: center;
         box-sizing: border-box;
@@ -46,5 +47,5 @@
 }
 
 .swiper-slide-active:hover .overlay {
-    display: block;
+    opacity: 1;
 }

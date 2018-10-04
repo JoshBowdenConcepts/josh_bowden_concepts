@@ -22,10 +22,12 @@ header {
         margin: 0 auto;
         color: white;
         text-align: center;
+        z-index: 100;
     }
 
     #my-work-btn {
         display: none;
+        cursor: pointer;
     }
 
 }

@@ -40,3 +40,39 @@ $(window).scroll(function() {
     typeWriter();
   
   }());
+
+$(document).ready(function() {
+
+
+
+  $('#home').click(function() {
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
+    }, 500);
+  });
+
+  $('#about').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top - 50
+    }, 500);
+  });
+
+  $('#my-work-btn').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#work").offset().top - 50
+    }, 500);
+  });
+
+  $('#work-link').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#work").offset().top - 50
+    }, 500);
+  });
+
+  $('#contact-link').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 500);
+  });
+
+});
