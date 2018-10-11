@@ -1,0 +1,30 @@
+@import 'mixins';
+
+#technologies {
+    background-color: darken($header-background, 10%);
+    padding: 30px 0px;
+
+    h3 {
+        color: white;
+    }
+
+    #tech {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .tech_logo {
+            height: 80px;
+            width: 80px;
+            margin: 20px;
+            position: relative;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                position: absolute;
+                opacity: 0.7;
+            }
+        }
+    }
+}
